@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;;
 }
 
 /* DEBUG */
@@ -41,8 +43,9 @@ h1 {
 /* MAIN */
 
 main {
-  background-color: #f6f8f9;
   padding-top: 50px;
+  background-color: #f6f8f9;
+  color: #42464f;
 }
 
 .container {
@@ -51,6 +54,7 @@ main {
   background-color: white;
   border-radius: 8px;
 }
+
 
 /* MANAGMENT TASKS */
 
@@ -72,4 +76,42 @@ main {
   color: white;
   background-color: #47adf1;
   border-color: #47adf1;
+}
+
+
+/* LISTE TASKS */
+
+.lists-tasks {
+  padding: 50px;
+}
+
+h2 {
+  margin-bottom: .7rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.list>li {
+  margin-bottom: 1.5rem;
+}
+
+.mark {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  line-height: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.checked {
+  color: #6dc4b0;
+  border-color: #6dc4b0;
+}
+
+.crossed {
+  color: red;
+  border-color: red;
 }
