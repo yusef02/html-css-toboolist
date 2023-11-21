@@ -10,10 +10,6 @@
 
 /* DEBUG */
 
-*{
-  font-size: 18px;
-}
-
 /* GENERICS */
 
 .small-txt{
@@ -47,14 +43,13 @@ main {
   padding-bottom: 100px;
   background-color: #f6f8f9;
   color: #42464f;
-  background-color: #192c59;
 }
 
 .container {
   width: 70%;
   margin: 0 auto;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 
@@ -156,3 +151,5 @@ h2 {
 .sales{
   background-color: #b0c926;
 }
+
+/* compito competato senza difficoltà particolare, metodo di centramento con line height text align e vertical align compreso in modo completo. magari potevo organizzarmi meglio nel pubblicare determinati commit procedendo a piccoli passi */
