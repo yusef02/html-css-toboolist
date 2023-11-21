@@ -14,10 +14,10 @@
 
 /* GENERICS */
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+.small-txt{
+  font-size: 12px;
 }
+
 
 /* HEADER */
 
@@ -35,4 +35,41 @@ h1 {
   font-size: 2.7rem;
   display: inline-block;
   vertical-align: middle;
+}
+
+
+/* MAIN */
+
+main {
+  background-color: #f6f8f9;
+  padding-top: 50px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* MANAGMENT TASKS */
+
+.nav-bar-tasks {
+  padding: 20px 50px 10px;
+  border-bottom: 2px solid #f6f8f9;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: .5rem;
+  margin: .2rem;
+  color: #e3e6e8;
+  border: 1px solid #e3e6e8;
+  border-radius: 8px;
+}
+
+.nav-btn:hover {
+  color: white;
+  background-color: #47adf1;
+  border-color: #47adf1;
 }
