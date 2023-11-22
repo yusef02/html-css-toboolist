@@ -5,36 +5,45 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
+
+/* era corretto dare il colore grigio al body e assegnare dei bg white al header e container */
 
 /* DEBUG */
 
 /* GENERICS */
 
-.small-txt{
+.small-txt {
   font-size: 12px;
 }
 
-
 /* HEADER */
 
-.header{
+.header {
   height: 100px;
   padding-left: 20px;
   line-height: 100px;
 }
 
-.header>img {
+.header > img {
   vertical-align: middle;
 }
 
 h1 {
-  font-size: 2.7rem;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 0.5rem;
+  font-size: 2.7rem;
 }
 
+/* si poteva riorganizare semplicemnte lasciando l'h1 coon la sua effetiva font size e unire due classi header logo e header title allinearli con display inline block e vartical align
+  .header-logo,
+  .header-title {
+    display: inline-block;
+    vertical-align: middle;
+  } 
+  o ancora meglio anche creare un loro contenitore layer assegnarli una line height uguale all'altezza del header*/
 
 /* MAIN */
 
@@ -52,7 +61,6 @@ main {
   border-radius: 16px;
 }
 
-
 /* MANAGMENT TASKS */
 
 .nav-bar-tasks {
@@ -62,19 +70,19 @@ main {
 
 .nav-btn {
   display: inline-block;
-  padding: .5rem;
-  margin: .2rem;
+  padding: 0.5rem;
+  margin: 0.2rem;
   color: #e3e6e8;
-  border: 1px solid #e3e6e8;
+  border: 1px solid currentColor;
   border-radius: 8px;
-}
+  cursor: pointer;
+} /* i bottoni dovrebbero essere inseriti nell'insieme delle classi generiche in quanto si potrebbe riutilizzare in più sezioni */
 
 .nav-btn:hover {
   color: white;
   background-color: #47adf1;
   border-color: #47adf1;
 }
-
 
 /* LISTE TASKS */
 
@@ -83,23 +91,25 @@ main {
 }
 
 h2 {
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
   font-size: 1.3rem;
   font-weight: 700;
-}
+} /* selettore troppo generico, in questo progetto non era un problema ma necessaria una classe in più per evitare problemi per evitare problemi in casi di riutilizzo di h2 altrove */
 
-.list>li {
+.list > li {
   margin-bottom: 1.5rem;
 }
+
+/* qui poi si potevano ragruppare tutti gli attributi height line height vertical align per assegnarli con un selettore and e ridurre le righe di codice */
 
 /* mark styling */
 .mark {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
+  line-height: 1.2rem;
   border: 1px solid black;
   border-radius: 50%;
-  line-height: 1.2rem;
   text-align: center;
   vertical-align: middle;
 }
@@ -116,8 +126,8 @@ h2 {
 
 .task-desc {
   display: inline-block;
-  margin: .2rem;
-  height: 1.2rem;  
+  /* margin: 0.2rem;     non necessario */
+  height: 1.2rem;
   line-height: 1.2rem;
   vertical-align: middle;
 }
@@ -130,26 +140,28 @@ h2 {
   text-align: center;
   vertical-align: middle;
   border-radius: 16px;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
+  color: white;
 }
 
-.editorial {
+.badge.editorial {
   background-color: #44aaea;
 }
-.q1goals {
+.badge.q1goals {
   background-color: #9b71e3;
 }
-.recruiting {
+.badge.recruiting {
   background-color: #64c0a9;
 }
-.mobile {
+.badge.mobile {
   background-color: #f29e33;
 }
-.website {
+.badge.website {
   background-color: #d863a1;
 }
-.sales{
+.badge.sales {
   background-color: #b0c926;
 }
+/* per specifictà bisogna unire le classi per assegnare specifici attributi a classi speciali assiciati a una clase generica*/
 
 /* compito competato senza difficoltà particolare, metodo di centramento con line height text align e vertical align compreso in modo completo. magari potevo organizzarmi meglio nel pubblicare determinati commit procedendo a piccoli passi */
